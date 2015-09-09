@@ -1,0 +1,24 @@
+<div class="content-logged-out">
+<div class="jumbotron sign-in-jumbo">
+  <br>
+  <br>
+  <br>
+  <br>
+    <div class="error-messages">
+    <% if flash[:error] %>
+      <% flash[:error].each do |error| %>
+        <h2 class="error"><%= error %></h2>
+      <% end %>
+    <% end %>
+    </div>
+    <div class="sign-in-jumbo-content">
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <h1 class="def-cruci">cru•ci•ver•bal•ist</h1>
+      <h1 class="definition">a designer or afficionado of crossword puzzles</h1>
+      <br>
+    </div>
+</div>
