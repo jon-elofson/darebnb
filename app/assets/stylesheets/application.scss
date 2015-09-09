@@ -16,3 +16,82 @@
 
  @import "bootstrap-sprockets";
  @import "bootstrap";
+
+
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+div.jumbotron.sign-in-jumbo {
+  background-image: image-url('home1.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 0px;
+  width: 100%;
+  height: 100%;
+  color: white;
+  overflow: hidden;
+  margin: 0px;
+  border-radius: 0px;
+}
+
+a.navbar-brand {
+  font-family: arial;
+  font-size: 4vh;
+  vertical-align: center;
+  color: #FF4D4D;
+  padding-left: 4vw;
+  margin-bottom: 10%;
+  font-weight: bold;
+}
+
+.navbar-right li a {
+    margin-top: 0.2vh;
+    margin-right: .5vw;
+    color: inherit;
+    font-size: 120%;
+    font-weight: bold;
+    width: inherit;
+    margin-bottom: 20%;
+    min-width: inherit;
+    vertical-align: middle;
+    font-family: arial;
+    border: none;
+}
+
+.navbar-right li a:hover {
+  background-color: none;
+  color: black;
+}
+
+.navbar-right li a {
+  color: #FF4D4D;
+}
+
+.navbar-right:last-child {
+  margin-right: 2.5%;
+}
+
+
+div.container-fluid {
+  height: 100%;
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+}
+
+h2.description {
+  padding-left: 9.5%;
+}
+
+.navbar {
+  background-color: white;
+  padding-top: 2vh;
+  margin-bottom: 10px;
+  width: 100%;
+  height: 11vh;
+  border: 0px;
+  font-size: 100%;
+  border-radius: 0px;
+}
