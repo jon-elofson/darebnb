@@ -24,13 +24,14 @@ html, body {
 }
 
 div.jumbotron.sign-in-jumbo {
-  background-image: image-url('home1.jpg');
+  background-image: none;
   background-repeat: no-repeat;
   background-size: cover;
   margin-bottom: 0px;
   width: 100%;
   height: 100%;
   color: white;
+  padding: 0px;
   overflow: hidden;
   margin: 0px;
   border-radius: 0px;
@@ -65,6 +66,11 @@ a.navbar-brand {
   color: black;
 }
 
+.sign-in-jumbo-content {
+  height: 100%;
+  width: 100%;
+}
+
 .navbar-right li a {
   color: #FF4D4D;
 }
@@ -85,13 +91,82 @@ h2.description {
   padding-left: 9.5%;
 }
 
+#splash-carousel {
+  height: 100%;
+  width: 100%;
+}
+
+.carousel-fade {
+    .carousel-inner {
+        .item {
+            transition-property: opacity;
+        }
+
+        .item,
+        .active.left,
+        .active.right {
+            opacity: 0;
+        }
+
+        .active,
+        .next.left,
+        .prev.right {
+            opacity: 1;
+        }
+
+        .next,
+        .prev,
+        .active.left,
+        .active.right {
+            left: 0;
+            transform: translate3d(0, 0, 0);
+        }
+    }
+
+    .carousel-control {
+        z-index: 2;
+    }
+}
+
+div.carousel-caption h3 {
+  font-family: arial;
+  font-size: 50px;
+  text-shadow: 2px gray;
+}
+
+div.carousel-caption {
+  top: 15%;
+  left: 33%;
+  width: 100%;
+}
+
 .navbar {
   background-color: white;
   padding-top: 2vh;
-  margin-bottom: 10px;
   width: 100%;
+  margin-bottom: 0px;
   height: 11vh;
   border: 0px;
   font-size: 100%;
   border-radius: 0px;
+}
+
+.carousel,.item,.active {
+  height:100%;
+  width: 100%
+}
+
+.carousel,.item img{
+  height:100%;
+  width: 100%
+}
+
+
+.carousel,.item,.active img{
+  height:100%;
+  width: 100%
+}
+.carousel-inner{
+  height:100%;
+  width: 100%;
 }
