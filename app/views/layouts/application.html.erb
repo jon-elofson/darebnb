@@ -1,14 +1,17 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Darebnb</title>
+  <title>darebnb</title>
   <%= stylesheet_link_tag    'application', media: 'all' %>
   <%= javascript_include_tag 'application' %>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <%= csrf_meta_tags %>
+  <link href='http://fonts.googleapis.com/css?family=Bevan' rel='stylesheet' type='text/css'>
 </head>
 <body>
-
-<%= yield %>
-
+  <%= render partial: "layouts/header" %>
+  <div class="container-fluid" id="content">
+  <%= yield %>
+  </div>
 </body>
 </html>
