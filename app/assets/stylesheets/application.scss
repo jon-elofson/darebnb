@@ -171,6 +171,28 @@ div.carousel-caption {
   width: 100%
 }
 
+div.carousel-caption {
+  top: 20%;
+  left: -1%;
+  width: 100%;
+}
+
+div.carousel-caption h2 {
+  color: white;
+  text-shadow: 2px lightgray;
+  font-family: 'helvetica';
+  font-weight: bold;
+  font-size: 60px;
+}
+
+div.carousel-caption h3 {
+  color: white;
+  text-shadow: 5px lightgray;
+  font-family: 'helvetica';
+  font-weight: bold;
+  font-size: 25px;
+}
+
 
 .carousel,.item,.active img{
   height:100%;
