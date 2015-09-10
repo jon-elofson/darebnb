@@ -15,6 +15,13 @@ gem 'jquery-ui-rails'
 gem 'bootstrap-sass'
 gem 'seed_dump'
 gem 'oauth'
+gem 'therubyracer'
+gem 'devise'
+gem 'omniauth'
+gem 'omniauth-digitalocean'
+gem 'omniauth-google'
+gem 'omniauth-facebook'
+
 
 group :doc do
   gem 'sdoc', require: false

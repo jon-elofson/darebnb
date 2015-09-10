@@ -161,14 +161,46 @@ div.carousel-caption {
   border-radius: 0px;
 }
 
+a.sign-in-link {
+
+}
+
 .carousel,.item,.active {
   height:100%;
   width: 100%
 }
 
+a.sign-in-link {
+  margin-top: 5%;
+  text-decoration: none;
+  color: #FF4D4D;
+  font-family: arial;
+  font-weight: bold;
+  font-size: 17px;
+}
+
+a.sign-in-link:hover {
+  color: #6666FF;
+}
+
 .carousel,.item img{
   height:100%;
   width: 100%
+}
+
+.modal h2.title {
+  color: #FF4D4D;
+  font-family: arial;
+  font-weight: bold;
+}
+
+.modal {
+  text-align: center;
+  margin: auto;
+  height: 55%;
+  width: 40%;
+  background-color: white;
+  border-radius: 10px;
 }
 
 div.carousel-caption {
