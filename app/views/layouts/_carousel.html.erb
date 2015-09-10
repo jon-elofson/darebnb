@@ -1,18 +1,21 @@
-<script type="text/javascript">
-  $(document).ready(function()
-  {
-      setTimeout(function () {
-        $('.carousel').carousel('next');
-      }.bind(this), 4000);
-
-
-  });
+<script type='text/javascript'>
+    $(document).ready(function() {
+         $('.carousel').carousel({
+             interval: 4000
+         })
+    });
 </script>
+
 
 <div id="splash-carousel" class="carousel slide carousel-fade" data-ride="carousel">
   <!-- Wrapper for slides -->
   <div class="carousel-inner" data-interval="4000">
     <div class="item active">
+      <%= image_tag("mounthouse.jpg", :alt => "home") %>
+      <div class="carousel-caption">
+      </div>
+    </div>
+    <div class="item">
       <%= image_tag("treehouse.jpg", :alt => "home") %>
       <div class="carousel-caption">
       </div>
