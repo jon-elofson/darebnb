@@ -66,6 +66,11 @@ a.navbar-brand {
   color: black;
 }
 
+.btn:focus {
+  outline: none;
+  color: #6666FF;
+}
+
 .sign-in-jumbo-content {
   height: 100%;
   width: 100%;
@@ -197,7 +202,7 @@ a.sign-in-link:hover {
 .modal {
   text-align: center;
   margin: auto;
-  height: 55%;
+  height: 60%;
   width: 40%;
   background-color: white;
   border-radius: 10px;
@@ -212,15 +217,16 @@ div.carousel-caption {
 div.carousel-caption h2 {
   color: white;
   text-shadow: 2px lightgray;
-  font-family: 'helvetica';
+  font-family: arial;
   font-weight: bold;
   font-size: 60px;
+  margin-top: -25px;
 }
 
 div.carousel-caption h3 {
   color: white;
   text-shadow: 5px lightgray;
-  font-family: 'helvetica';
+  font-family: arial;
   font-weight: bold;
   font-size: 25px;
 }

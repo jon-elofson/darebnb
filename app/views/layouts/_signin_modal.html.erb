@@ -1,3 +1,10 @@
+<script type="text/javascript">
+$(document).on("click",".not-a-member",function(){
+  $('#login').modal('hide');
+  $('#signin').modal('show');
+});
+</script>
+
 <div class="modal fade in" id="login">
 
   <div class="modal-header">
@@ -33,7 +40,7 @@
 
   <div class="modal-footer">
 
-  <%= render "devise/shared/links" %>
+    <%= link_to "Already a member? Sign in", "#signup", "data-toggle" => "modal", :class => 'btn not-a-member' %>
 
   </div>
 
