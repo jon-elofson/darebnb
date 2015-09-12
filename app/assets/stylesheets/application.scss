@@ -166,10 +166,6 @@ div.carousel-caption {
   border-radius: 0px;
 }
 
-a.sign-in-link {
-
-}
-
 .carousel,.item,.active {
   height:100%;
   width: 100%
@@ -199,14 +195,32 @@ a.sign-in-link:hover {
   font-weight: bold;
 }
 
-.modal input{
+.btn-periwinkle {
+  color: white;
+  font-family: arial;
+  font-size: 80%;
+  font-weight: bold;
+  background-color: #6666FF
+}
+
+.btn-periwinkle:hover  {
+  color: white;
+  background-color: #FF4D4D;
+}
+
+.modal div.remember-div input {
+  width: inherit;
+}
+
+.modal input {
+  text-align: center;
   width: 60%
 }
 
 .modal {
   text-align: center;
   margin: auto;
-  height: 60%;
+  height: 65%;
   width: 40%;
   border-radius: 10px;
   background-color: white;

@@ -39,7 +39,7 @@ $(document).on("click",".already-a-member",function(){
     </div>
     <br>
 
-    <%= f.submit "Sign up!", :class => 'btn btn-small btn-warning' %>
+    <%= f.submit "Sign up!", :class => 'btn btn-small btn-periwinkle' %>
 
     <% end %>
 
@@ -48,6 +48,11 @@ $(document).on("click",".already-a-member",function(){
 
 </div>
 
-<%= link_to "Already a member? Sign in", "#login", "data-toggle" => "modal", :class => 'btn already-a-member' %>
+<div class="modal-footer">
+
+  <%= link_to "Already a member? Sign in", "#login", "data-toggle" => "modal", :class => 'btn already-a-member' %>
+
+</div>
+
 
 </div>
