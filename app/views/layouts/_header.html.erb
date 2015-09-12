@@ -21,9 +21,10 @@
     <% else %>
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav navbar-right">
+        <img src="<%=current_user.image%>" alt="" class="nav-pic" />
         <%= link_to "host", "#", "data-toggle" => "modal", :class => 'btn sign-in-link' %>
         <%= link_to "adventure", "#", "data-toggle" => "modal", :class => 'btn sign-in-link' %>
-       <%= link_to('logout', destroy_user_session_path, :method => :delete, :class => 'btn sign-in-link') %>  
+       <%= link_to('logout', destroy_user_session_path, :method => :delete, :class => 'btn sign-in-link') %>
     </div>
     <% end %>
   </div>

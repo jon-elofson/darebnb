@@ -217,10 +217,37 @@ a.sign-in-link:hover {
   width: 60%
 }
 
+.btn-facebook.btn {
+  color: white;
+  background-color: #3B5998;
+  font-size: 1em;
+  &:hover {
+    color: white;
+    background-color: RoyalBlue;
+  }
+  margin-bottom: 10px;
+}
+
+img.nav-pic {
+  border-radius: 20px;
+  height: 40px;
+}
+
+.btn-google.btn {
+  color: white;
+  background-color: #DF4A32;
+  font-size: 1em;
+  &:hover {
+    color: white;
+    background-color: RoyalBlue;
+  }
+  margin-bottom: 10px;
+}
+
 .modal {
   text-align: center;
   margin: auto;
-  height: 65%;
+  height: 75%;
   width: 40%;
   border-radius: 10px;
   background-color: white;

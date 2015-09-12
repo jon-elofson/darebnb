@@ -17,6 +17,17 @@ $(document).on("click",".already-a-member",function(){
 
 <div class="modal-body">
 
+  <%= link_to omniauth_authorize_path(:user, :facebook), class: 'btn btn-facebook btn' do %>
+    <i class="fa fa-facebook fa-2x"></i>
+    Facebook
+  <% end %>
+
+  <%= link_to omniauth_authorize_path(:user, :google_oauth2), class: 'btn btn-google btn' do %>
+    <i class="fa fa-google-plus fa-2x"></i>
+    Google
+  <% end %>
+  <br>
+
   <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
     <%= devise_error_messages! %>
 

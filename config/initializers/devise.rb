@@ -1,3 +1,5 @@
+require "omniauth-google-oauth2" 
+
 # Use this hook to configure devise mailer, warden hooks and so forth.
 # Many of these configuration options can be set straight in your model.
 Devise.setup do |config|
@@ -142,7 +144,7 @@ Devise.setup do |config|
 
   # ==> Configuration for :validatable
   # Range for password length.
-  config.password_length = 8..14
+  config.password_length = 8..60
 
   # Email regex used to validate email formats. It simply asserts that
   # one (and only one) @ exists in the given string. This is mainly
@@ -236,7 +238,9 @@ Devise.setup do |config|
   # Add a new OmniAuth provider. Check the wiki for more information on setting
   # up on your models and hooks.
   # config.omniauth :github, 'APP_ID', 'APP_SECRET', scope: 'user,public_repo'
-  config.omniauth :facebook, "1629391354015625", "980c7a55c212b90edd67caa9f5399511"
+  config.omniauth :facebook, "1629391354015625", "980c7a55c212b90edd67caa9f5399511", scope: 'email', info_fields: 'email'
+
+  config.omniauth :google_oauth2, "806238423599-31vct70he3aaamn0jol9ileko2lm0fj0.apps.googleusercontent.com", "pQLVdXjX6mGoKbefrKJVWX_K", { access_type: "offline", approval_prompt: "" }
   # ==> Warden configuration
   # If you want to use other strategies, that are not supported by Devise, or
   # change the failure app, you can configure them inside the config.warden block.
