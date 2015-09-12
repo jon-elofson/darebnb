@@ -37,10 +37,9 @@ $(document).on("click",".already-a-member",function(){
       <%= f.label :password_confirmation %><br />
       <%= f.password_field :password_confirmation, autocomplete: "off" %>
     </div>
+    <br>
 
-    <div class="actions sign-up-button">
-      <%= f.submit "Sign up" %>
-    </div>
+    <%= f.submit "Sign up!", :class => 'btn btn-small btn-warning' %>
 
     <% end %>
 
