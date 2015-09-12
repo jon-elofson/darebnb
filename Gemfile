@@ -18,8 +18,9 @@ gem 'oauth'
 gem 'therubyracer'
 gem 'devise'
 gem 'omniauth'
-gem 'omniauth-google-oauth2' 
+gem 'omniauth-google-oauth2'
 gem 'omniauth-facebook'
+gem 'react-rails'
 
 
 group :doc do
