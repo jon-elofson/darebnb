@@ -1,0 +1,13 @@
+<div class="jumbotron sign-in-jumbo">
+    <div class="error-messages">
+    <% if flash[:error] %>
+      <% flash[:error].each do |error| %>
+        <h2 class="error"><%= error %></h2>
+      <% end %>
+    <% end %>
+    </div>
+    <div class="sign-in-jumbo-content">
+    <%= render partial: "layouts/carousel" %>
+    </div>
+
+</div>
