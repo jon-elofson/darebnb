@@ -66,6 +66,7 @@ a.navbar-brand {
   color: black;
 }
 
+
 .btn:focus {
   outline: none;
   color: #6666FF;
@@ -164,6 +165,7 @@ div.carousel-caption {
   border: 0px;
   font-size: 100%;
   border-radius: 0px;
+  border-bottom: 1px solid lightgray;
 }
 
 .carousel,.item,.active {

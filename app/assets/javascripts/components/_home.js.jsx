@@ -1,11 +1,12 @@
 var HomeBox = React.createClass({
   render: function () {
   var style = {
-    height: '100%',
-    width: '100%'
+    height: '100vh',
+    width: '100vw'
   };
   return (
-    <div style={style}>
+    <div className="HomeBox row" style={style}>
+      <Search/>
       <Map/>
     </div>
   );
