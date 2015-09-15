@@ -1,5 +1,3 @@
-
-
 <nav class="navbar navbar-fixed-top logged-in">
   <div class="container-fluid">
     <div class="navbar-header">
@@ -21,7 +19,9 @@
     <% else %>
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav navbar-right">
+        <% if current_user.image %>
         <img src="<%=current_user.image%>" alt="" class="nav-pic" />
+        <% end %>
         <%= link_to "host", "#", "data-toggle" => "modal", :class => 'btn sign-in-link' %>
         <%= link_to "adventure", "#", "data-toggle" => "modal", :class => 'btn sign-in-link' %>
        <%= link_to('logout', destroy_user_session_path, :method => :delete, :class => 'btn sign-in-link') %>
