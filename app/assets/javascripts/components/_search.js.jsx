@@ -7,7 +7,6 @@ var Search = React.createClass({
     };
     return (
     <div className="search col-md-3" style={style}>
-      Where are we going?
     </div>
     )
   },
