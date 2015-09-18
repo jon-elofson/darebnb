@@ -6,7 +6,7 @@ var HomeBox = React.createClass({
   };
   return (
     <div className="HomeBox row" style={style}>
-      <Search/>
+      <Index/>
       <Map/>
     </div>
   );
