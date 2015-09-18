@@ -22,6 +22,7 @@ gem 'omniauth-google-oauth2'
 gem 'omniauth-facebook'
 gem 'react-rails'
 gem 'flux-rails-assets'
+gem 'geocoder'
 
 
 group :doc do
