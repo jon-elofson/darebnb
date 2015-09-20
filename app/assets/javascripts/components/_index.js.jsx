@@ -17,8 +17,8 @@ var Index = React.createClass({
   render: function () {
     var that = this;
     return (
-      <div className="Index col-md-3">
-         <li>{that.state.places[0].name}</li>
+      <div className="index col-md-3">
+
       </div>
     );
   },
