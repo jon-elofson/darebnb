@@ -9,6 +9,7 @@ var Index = React.createClass({
     var that = this;
     this.store.addChangeListener(function () {
       that.setState({places: PlaceStore.all()});
+      that.render();
     });
     ApiUtil.fetchPlaces();
   },
@@ -16,12 +17,12 @@ var Index = React.createClass({
   render: function () {
     var that = this;
     return (
-      React.createElement('div', {className: "index col-md-3"},
-        that.state.places.forEach(function (place) {
-          React.createElement('h1', {className: "index-header"}, place.name);
-        })
-      )
+      <div className="Index col-md-3">
+         <li>{that.state.places[0].name}</li>
+      </div>
     );
   },
+
+
 
 });
