@@ -37,12 +37,16 @@ var Map = React.createClass({
 
   addMarkers: function () {
     var that = this;
-    marker = new google.maps.Marker({
-      map: that.map,
-      draggable: true,
-      animation: google.maps.Animation.DROP,
-      position: {lat: 59.327, lng: 18.067}
-    });
+    this.state.places.forEach(function (place) {
+      var lat = place.lat
+      var lng = place.long
+      marker = new google.maps.Marker({
+        map: that.map,
+        draggable: true,
+        animation: google.maps.Animation.DROP,
+        position: {lat: lat, lng: lng}
+      });
+    })
   }
 
 
