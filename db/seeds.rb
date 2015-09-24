@@ -1,7 +1,10 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the rake db:seed (or created alongside the db with db:setup).
-#
-# Examples:
-#
-#   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
-#   Mayor.create(name: 'Emanuel', city: cities.first)
+User.create!([
+  {email: "rilo.kiley@gmail.com", encrypted_password: "$2a$10$sUv6qhD4uyE0C7orIM4VeuDsxvx.IdaRkO8BXQU9064Hy1ZCf8dMm", reset_password_token: nil, reset_password_sent_at: nil, remember_created_at: nil, sign_in_count: 1, current_sign_in_at: "2015-09-15 19:50:37", last_sign_in_at: "2015-09-15 19:50:37", current_sign_in_ip: "::1", last_sign_in_ip: "::1", provider: nil, uid: nil, image: nil},
+  {email: "jonathan.elofson@gmail.com", encrypted_password: "$2a$10$Jp6i8LX1WM.2WuoKecmyg.SsknyytAsUFaETRn1UUWsSEBW3FrgIu", reset_password_token: nil, reset_password_sent_at: nil, remember_created_at: nil, sign_in_count: 40, current_sign_in_at: "2015-09-23 05:02:56", last_sign_in_at: "2015-09-20 00:30:07", current_sign_in_ip: "::1", last_sign_in_ip: "::1", provider: "facebook", uid: "10206802424117735", image: "http://graph.facebook.com/10206802424117735/picture"},
+  {email: "jonathan_elofson@alumni.brown.edu", encrypted_password: "$2a$10$et/sVSMV.tDMxAF.GP0DfewB4I.xiPxn8o/hy38MK92xUPEB3gEK2", reset_password_token: nil, reset_password_sent_at: nil, remember_created_at: nil, sign_in_count: 1, current_sign_in_at: "2015-09-14 01:36:21", last_sign_in_at: "2015-09-14 01:36:21", current_sign_in_ip: "::1", last_sign_in_ip: "::1", provider: "google_oauth2", uid: "108679087197827801398", image: "https://lh3.googleusercontent.com/-XdUIqdMkCWA/AAAAAAAAAAI/AAAAAAAAAAA/4252rscbv5M/photo.jpg?sz=50"}
+])
+Place.create!([
+  {user_id: 10, name: "Juno Campground", max_people: 10, description: "Large campsite for anyone passing through Alaska. Tents will be set up for you before you arrive!", cost_per_night: 100, lat: 58.3, long: -134.4167},
+  {user_id: 10, name: "Machu Picchu Bungalow", max_people: 10, description: "small bungalow close to the apex of machu picchu", cost_per_night: 200, lat: -13.0948, long: -72.43244},
+  {user_id: 10, name: "Mount Elbrus Cottages", max_people: 5, description: "a few cottages available in a small village located on the ascent to mount elbrus", cost_per_night: 100, lat: 43.2118, long: 46.2621}
+])
